@@ -3,6 +3,8 @@ Date: 12/06/2021
 Author: Mohamed EL-Gallad
 Description : This file will contain the errors MACROS .
 */
+#ifndef _CIRCULARBUFFERPRIVATE_H_
+#define _CIRCULARBUFFERPRIVATE_H_
 
 //if the buffer is full the CBuffer_PushData function should return the following MACROS 
 #define ERROR_BUFFER_FULL     (unsigned char)0x01
@@ -14,5 +16,13 @@ Description : This file will contain the errors MACROS .
 #define SUCCESSFUL_OPERATION  (unsigned char)0x03
 
 //the following MACROS is used as boolean return values for CBuffer_IsTheBufferFull and CBuffer_IsTheBufferEmpty
+#ifndef TRUE
 #define TRUE   (unsigned char)1
+#endif
+
+#ifndef FALSE
 #define FALSE  (unsigned char)0
+#endif
+
+
+#endif

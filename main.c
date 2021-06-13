@@ -1,3 +1,9 @@
+/*
+Date: 12/06/2021
+Author: Mohamed EL-Gallad
+Description : This main file contains some test cases for the CircularBuffer lib.
+*/
+
 #include <stdio.h>
 #include "CircularBuffer.h"
 	
